@@ -4,6 +4,11 @@ import React, { Component } from "react";
 import './TodoItem.css';
 
 class TodoItem extends Component {
+
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.checked !== nextProps.checked;//컴포넌트가 업데이트 되는 경우는 checked값이 바뀔때
+    }
+
     render() {
         const { text, checked, id, onToggle, onRemove} = this.props;
 

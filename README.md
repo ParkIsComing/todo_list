@@ -1,3 +1,5 @@
+리액트 todo list
+
 # 기능
 <ul>
   <li>input에 할일을 작성하여 등록
